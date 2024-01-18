@@ -1,0 +1,92 @@
+
+#banner {
+    display: inline;
+    height: 55px;
+    width: auto;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+h3 {
+    color: #efefef;
+}
+/* navigation */
+.navigation a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    color: #efefef;
+}
+
+.navigation a:hover {
+    background-color: #000000;
+}
+
+.navigation li {
+    text-align: center;
+    display: inline-flex;
+    border: 1px solid #000000;
+    box-shadow: 1px 1px 1px 1px #000000;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    
+}
+
+/* large */
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin: 0;
+    background-color: #606060;
+
+}
+
+/* medium */
+@media all and (max-width: 800px) {
+    .navigation {
+        justify-content: space-around;
+    }
+}
+
+/* small */
+@media all and (max-width: 600px) {
+    .navigation {
+        flex-direction: column;
+        padding: 0;
+    }
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        
+    }
+}
+
+/* fonts */
+
+.cinzel {
+    font-family: 'Cinzel Decorative', serif;
+    text-align: center;
+}
+
+.openSansReg {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 12px;
+}
+/* containers-flexbox */
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+}
+
+.childFlex {
+    align-items: flex-start;
+}
